@@ -1,7 +1,7 @@
 // generator.js
 module.exports = (api, options, rootOptions) => {
   api.extendPackage({
-    // 命令
+    //  命令
     scripts: {
       "serve": "vue-cli-service serve",
       "build": "vue-cli-service build",
