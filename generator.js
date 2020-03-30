@@ -11,10 +11,10 @@ module.exports = (api, options, rootOptions) => {
     dependencies: {
       "core-js": "^3.6.4",
       "terser-webpack-plugin": "^2.3.5",
-      vue: "^2.6.11",
+      "vue": "^2.6.11",
       "vue-router": "^3.1.5",
-      vuex: "^3.1.2",
-      axios: "^0.19.2",
+      "vuex": "^3.1.2",
+      "axios": "^0.19.2",
       "element-ui": "^2.13.0",
       "normalize.css": "^8.0.1"
     },
@@ -26,14 +26,14 @@ module.exports = (api, options, rootOptions) => {
       "@vue/cli-service": "~4.2.0",
       "@vue/eslint-config-airbnb": "^5.0.2",
       "babel-eslint": "^10.0.3",
-      eslint: "^6.7.2",
+      "eslint": "^6.7.2",
       "eslint-config-airbnb-base": "^14.1.0",
       "eslint-config-prettier": "^6.10.1",
       "eslint-plugin-import": "^2.20.1",
       "eslint-plugin-prettier": "^3.1.2",
       "eslint-plugin-vue": "^6.1.2",
       "node-sass": "^4.12.0",
-      prettier: "^2.0.2",
+      "prettier": "^2.0.2",
       "sass-loader": "^8.0.2",
       "vue-template-compiler": "^2.6.11"
     }
