@@ -1,11 +1,11 @@
-import Vue from 'vue';
-import config from './config';
-import filters from './filters';
-import enums from './enums';
-import api from '../api/config';
-import _ from './lodash';
-import utils from './index';
-import validator from './validator';
+import Vue from "vue";
+import config from "./config";
+import filters from "./filters";
+import enums from "./enums";
+import api from "../server/config";
+import _ from "./lodash";
+import utils from "./index";
+import validator from "./validator";
 
 Vue.prototype.$config = config;
 Vue.prototype.$enums = enums;
@@ -20,7 +20,7 @@ for (const key in filters) {
 }
 
 Vue.prototype.$search = async (table, val) => {
-  if (!sessionStorage.getItem('loginData')) return;
+  if (!sessionStorage.getItem("loginData")) return;
   if (table && table.api) {
     const query = _.cloneDeep(table.query) || {};
     if (!table.hidePagination) {
@@ -32,7 +32,7 @@ Vue.prototype.$search = async (table, val) => {
       query.currentPage = 1;
     }
     if (query.queryContent) {
-      query.queryContent = query.queryContent.replace(/\s|\t+/g, '');
+      query.queryContent = query.queryContent.replace(/\s|\t+/g, "");
     }
     table.loading = true;
     try {
@@ -41,7 +41,7 @@ Vue.prototype.$search = async (table, val) => {
         table.data = data;
       } else {
         table.data = data.data;
-        table.other = _.omit(data, ['data', 'totalNum']);
+        table.other = _.omit(data, ["data", "totalNum"]);
         table.pagination.totalNum = data.totalNum;
       }
     } catch (e) {
