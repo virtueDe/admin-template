@@ -1,0 +1,8 @@
+@charset "UTF-8";
+@import './variables';
+
+@each $r in 90, 180 {
+  .rotate#{$r} {
+    transform: rotate(#{$r}deg);
+  }
+}

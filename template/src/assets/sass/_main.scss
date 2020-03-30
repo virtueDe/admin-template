@@ -1,0 +1,80 @@
+@charset "UTF-8";
+@import './scaffold';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: $min-width;
+  font-family: $fontFamily;
+  font-size: $fontNormal;
+  color: $-font-color-2;
+  overflow-y: hidden;
+}
+
+ul,
+li,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* 滚动条 */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  height: 8px;
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  width: 5px;
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+// 去除高德水印
+.amap-copyright,
+.amap-logo {
+  display: none !important;
+}
+
+//修改chrome记住密码后自动填充表单的背景
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #f2f6fa inset;
+  -webkit-box-shadow: 0 0 0 1000px #f2f6fa inset;
+  border: 0 solid transparent !important;
+}
+
+.curp {
+  cursor: pointer;
+  user-select: none;
+}

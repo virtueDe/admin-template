@@ -8,11 +8,8 @@
     "@vue/cli-plugin-vuex": {},
     "@vue/cli-plugin-eslint": {
       "config": "airbnb",
-      "lintOn": [
-        "save"
-      ]
+      "lintOn": ["save"]
     }
   },
   "cssPreprocessor": "node-sass"
-  
 }
