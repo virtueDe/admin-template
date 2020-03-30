@@ -24,14 +24,14 @@ Ajax.interceptors.request.use(
 Ajax.interceptors.response.use(
   res => {
     if (res.status === 200) {
-      // 正常请求
-      if (res.data.code === 200) return res.data.data || res.data;
-      if (res.data.code === 5163) {
-        router.replace({ name: "Login" });
-        Message.error("登录失效，请重新登录！");
-      } else {
-        Message.error(res.data.message);
-      }
+      // // 正常请求
+      // if (res.data.code === 200) return res.data.data || res.data;
+      // if (res.data.code === 5163) {
+      //   router.replace({ name: "Login" });
+      //   Message.error("登录失效，请重新登录！");
+      // } else {
+      //   Message.error(res.data.message);
+      // }
     }
     return Promise.reject(res);
   },
