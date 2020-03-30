@@ -3,10 +3,9 @@ module.exports = (api, options, rootOptions) => {
   api.extendPackage({
     // 命令
     scripts: {
-      serve: "vue-cli-service serve --open",
-      build: "vue-cli-service build",
-      lint: "vue-cli-service lint",
-      lints: "eslint --ext .js,.vue src --fix"
+      "serve": "vue-cli-service serve",
+      "build": "vue-cli-service build",
+      "lint": "vue-cli-service lint"
     },
     dependencies: {
       "core-js": "^3.6.4",
