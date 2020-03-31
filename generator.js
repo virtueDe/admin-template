@@ -11,7 +11,6 @@ module.exports = (api, options, rootOptions) => {
       "core-js": "^3.6.4",
       "terser-webpack-plugin": "^2.3.5",
       "vue": "^2.6.11",
-      "vue-router": "^3.1.5",
       "vuex": "^3.1.2",
       "axios": "^0.19.2",
       "element-ui": "^2.13.0",
@@ -20,7 +19,6 @@ module.exports = (api, options, rootOptions) => {
     devDependencies: {
       "@vue/cli-plugin-babel": "~4.2.0",
       "@vue/cli-plugin-eslint": "~4.2.0",
-      "@vue/cli-plugin-router": "~4.2.0",
       "@vue/cli-plugin-vuex": "~4.2.0",
       "@vue/cli-service": "~4.2.0",
       "@vue/eslint-config-airbnb": "^5.0.2",
