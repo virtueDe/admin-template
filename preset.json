@@ -1,15 +1,12 @@
 {
   "useConfigFiles": true,
+  "router": false,
+  "vuex": false,
   "plugins": {
     "@vue/cli-plugin-babel": {},
     "@vue/cli-plugin-router": {
       "historyMode": false
     },
-    "@vue/cli-plugin-vuex": {},
-    "@vue/cli-plugin-eslint": {
-      "config": "airbnb",
-      "lintOn": ["save"]
-    }
-  },
-  "cssPreprocessor": "node-sass"
+    "@vue/cli-plugin-vuex": {}
+  }
 }
